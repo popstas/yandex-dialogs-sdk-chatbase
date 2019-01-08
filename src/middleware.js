@@ -7,7 +7,7 @@ module.exports = api_key => (ctx, next) => {
     .setPlatform(ctx.data.meta.client_id); // The platform you are interacting with the user over
 
   // функцию нужно вызвать в самом конце, перед отправкой ответа пользователю
-  ctx.chatbase.onShutdown = async text => {
+  ctx.chatbase.sendEvent = async text => {
     if (process.env.NODE_ENV != 'production' || ctx.message == 'ping') return;
 
     // запрос

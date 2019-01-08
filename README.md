@@ -23,7 +23,7 @@ alice.use(chatbase('your_api_key'));
 
 alice.any(ctx => {
     const msg = 'Hello';
-    ctx.chatbase.onShutdown(msg)
+    ctx.chatbase.sendEvent(msg)
     return Reply.text(msg);
 });
 alice.listen(8080);
