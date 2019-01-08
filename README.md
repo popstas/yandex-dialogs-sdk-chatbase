@@ -12,6 +12,8 @@ Middleware for [yandex-dialogs-sdk](https://github.com/fletcherist/yandex-dialog
 
 # Usage
 
+Get api key, add a bot here - https://chatbase.com/bots/main-page
+
 ```js
 const { Alice } = require('yandex-dialogs-sdk');
 const chatbase = require('yandex-dialogs-sdk-chatbase');
