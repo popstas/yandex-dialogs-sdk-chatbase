@@ -1,0 +1,29 @@
+{
+  "name": "yandex-dialogs-sdk-chatbase",
+  "version": "0.1.0",
+  "description": "Позволяет добавлять свои вопросы и потом получать на них ответы",
+  "main": "index.js",
+  "scripts": {
+    "version": "npm run changelog && git add CHANGELOG.md docker-compose.yml",
+    "postversion": "git push && npm run release",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
+    "release": "conventional-github-releaser -p angular && npm release"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/popstas/yandex-dialogs-sdk-chatbase.git"
+  },
+  "author": "Stanislav Popov <popstas@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/popstas/yandex-dialogs-sdk-chatbase/issues"
+  },
+  "homepage": "https://github.com/popstas/yandex-dialogs-sdk-chatbase#readme",
+  "dependencies": {
+    "@google/chatbase": "^1.1.2"
+  },
+  "devDependencies": {
+    "conventional-changelog-cli": "^2.0.0",
+    "conventional-github-releaser": "^3.1.0"
+  }
+}
