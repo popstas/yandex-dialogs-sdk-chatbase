@@ -1,4 +1,14 @@
-# 1.0.0 (2019-01-08)
+## [1.0.1](https://github.com/popstas/yandex-dialogs-sdk-chatbase/compare/v1.0.0...v1.0.1) (2019-01-08)
+
+
+### Bug Fixes
+
+* onShutdown -> sendEvent ([7ca632b](https://github.com/popstas/yandex-dialogs-sdk-chatbase/commit/7ca632b))
+* style, readme ([a0fbf68](https://github.com/popstas/yandex-dialogs-sdk-chatbase/commit/a0fbf68))
+
+
+
+# [1.0.0](https://github.com/popstas/yandex-dialogs-sdk-chatbase/compare/b8e9b17...v1.0.0) (2019-01-08)
 
 
 ### Features
