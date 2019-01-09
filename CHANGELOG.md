@@ -1,3 +1,12 @@
+## [1.1.1](https://github.com/popstas/yandex-dialogs-sdk-chatbase/compare/v1.1.0...v1.1.1) (2019-01-09)
+
+
+### Bug Fixes
+
+* setApiKey should use with chatbase constructor ([47a693a](https://github.com/popstas/yandex-dialogs-sdk-chatbase/commit/47a693a))
+
+
+
 # [1.1.0](https://github.com/popstas/yandex-dialogs-sdk-chatbase/compare/v1.0.1...v1.1.0) (2019-01-09)
 
 
