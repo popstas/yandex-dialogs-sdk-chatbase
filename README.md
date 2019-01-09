@@ -35,17 +35,17 @@ alice.listen(8080);
 
 Подробнее об intents, not handled messages можно почитать в [chatbase quickstart](https://chatbase.com/documentation/quickstart).
 
-### Intents
-Нужно передавать распознанную команду как intent: `ctx.chatbase.setIntent('greeting')`
+### Intents (команды)
+Нужно передавать распознанную команду как intent: `ctx.chatbase.setIntent('greeting')`.
 
-### Непонятые сообщения
-Нужно отмечать их через `ctx.chatbase.setNotHandled()` или `ctx.chatbase.setHandled(false)`
+### Not handled messages (непонятые сообщения)
+Нужно отмечать их через `ctx.chatbase.setNotHandled()` или `ctx.chatbase.setHandled(false)`.
 
-### Отзывы
-Отзывы можно помечать через `ctx.chatbase.setAsFeedback()`
+### Feedback (отзывы)
+Отзывы можно помечать через `ctx.chatbase.setAsFeedback()`.
 
 ### Версия навыка
-Версию можно передавать через `ctx.chatbase.setVersion('1.2.3')`
+Версию можно передавать вторым параметром в конструкторе, либо через `ctx.chatbase.setVersion('1.2.3')`.
 
 Пример с использованием всех возможностей:
 
@@ -55,9 +55,9 @@ const chatbase = require('yandex-dialogs-sdk-chatbase');
 const packageJson = require('./package.json');
 
 const alice = new Alice();
-alice.use(chatbase('your_api_key'));
+alice.use(chatbase('your_api_key', packageJson.version)); // версию можно указать в конструкторе
 
-// можно указать версию навыка, но это не обязательно
+// можно указать версию навыка и так, но это избыточно
 alice.use((ctx, next) => {
     ctx.chatbase.setVersion(packageJson.version);
     return next(ctx);

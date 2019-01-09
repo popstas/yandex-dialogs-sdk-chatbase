@@ -1,11 +1,9 @@
-// отправляет данные в chatbase
-
-module.exports = api_key => (ctx, next) => {
+module.exports = (api_key, version = '') => (ctx, next) => {
   const msgParams = {
     intent: '',
     handled: true,
     feedback: false,
-    version: ''
+    version: version
   };
 
   // отправляет наполненное сообщение
