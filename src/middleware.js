@@ -47,6 +47,9 @@ module.exports = api_key => (ctx, next) => {
   ctx.chatbase.setHandled = value => {
     msgParams.handled = value;
   };
+  ctx.chatbase.setNotHandled = () => {
+    msgParams.handled = false;
+  };
 
   // отметить ответ как отзыв (например, "молодец" или "тупая")
   ctx.chatbase.setAsFeedback = () => {
