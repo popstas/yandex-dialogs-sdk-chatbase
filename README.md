@@ -42,7 +42,7 @@ alice.listen(8080);
 Нужно отмечать их через `ctx.chatbase.setNotHandled()` или `ctx.chatbase.setHandled(false)`.
 
 ### Feedback (отзывы)
-Отзывы можно помечать через `ctx.chatbase.setAsFeedback()`.
+Отзывы можно помечать через `ctx.chatbase.setAsFeedback()`. Не обнаружено последствий этой разметки.
 
 ### Версия навыка
 Версию можно передавать вторым параметром в конструкторе, либо через `ctx.chatbase.setVersion('1.2.3')`.

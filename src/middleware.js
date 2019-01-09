@@ -20,6 +20,8 @@ module.exports = (api_key, version = '') => (ctx, next) => {
       msg.setAsTypeUser();
       if (params.intent) msg.setIntent(params.intent);
       if (!params.handled) msg.setAsNotHandled();
+    } else {
+      msg.setAsTypeAgent();
     }
 
     if (params.feedback) msg.setAsFeedback();
