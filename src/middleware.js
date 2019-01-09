@@ -1,8 +1,6 @@
 // отправляет данные в chatbase
 
 module.exports = api_key => (ctx, next) => {
-  if (!api_key) return next(ctx);
-
   const msgParams = {
     intent: '',
     handled: true,
@@ -34,7 +32,7 @@ module.exports = api_key => (ctx, next) => {
       msg
         .send()
         // .then(msg => console.log(msg.getCreateResponse()))
-        .catch(err => console.error(err))
+        .catch(err => console.error('chatbase:', err))
     );
   };
 
@@ -62,7 +60,7 @@ module.exports = api_key => (ctx, next) => {
 
   // функцию нужно вызвать в самом конце, перед отправкой ответа пользователю
   ctx.chatbase.sendEvent = async text => {
-    if (ctx.message == 'ping') return;
+    if (ctx.message == 'ping' || !api_key) return;
 
     // запрос
     sendMessage(ctx.message, true, msgParams);
