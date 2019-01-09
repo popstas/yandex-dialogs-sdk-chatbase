@@ -1,6 +1,6 @@
 {
   "name": "yandex-dialogs-sdk-chatbase",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Позволяет добавлять свои вопросы и потом получать на них ответы",
   "main": "index.js",
   "scripts": {

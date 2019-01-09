@@ -1,3 +1,12 @@
+## [1.1.2](https://github.com/popstas/yandex-dialogs-sdk-chatbase/compare/v1.1.1...v1.1.2) (2019-01-09)
+
+
+### Bug Fixes
+
+* добавлять ctx.chatbase.* даже если api_key пустой ([a347475](https://github.com/popstas/yandex-dialogs-sdk-chatbase/commit/a347475))
+
+
+
 ## [1.1.1](https://github.com/popstas/yandex-dialogs-sdk-chatbase/compare/v1.1.0...v1.1.1) (2019-01-09)
 
 
