@@ -14,7 +14,6 @@ module.exports = api_key => (ctx, next) => {
   const sendMessage = (message, isUser, params) => {
     const msg = ctx.chatbase
       .newMessage()
-      .setApiKey(api_key)
       .setMessage(message)
       .setPlatform(ctx.data.meta.client_id)
       .setTimestamp(Date.now().toString())
@@ -39,7 +38,7 @@ module.exports = api_key => (ctx, next) => {
     );
   };
 
-  ctx.chatbase = require('@google/chatbase');
+  ctx.chatbase = require('@google/chatbase').setApiKey(api_key);
 
   // указать намерение (команду)
   ctx.chatbase.setIntent = intent => {
