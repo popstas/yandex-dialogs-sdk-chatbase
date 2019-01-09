@@ -23,8 +23,24 @@ alice.use(chatbase('your_api_key'));
 
 alice.any(ctx => {
     const msg = 'Hello';
+    // перед ответом пользователю нужно вызывать этот метод с текстом ответа
     ctx.chatbase.sendEvent(msg)
     return Reply.text(msg);
 });
 alice.listen(8080);
 ```
+
+# Advanced usage
+Чтобы использовать chatbase на полную мощность, нужно разметить навык.
+
+### Intents
+Нужно передавать распознанную команду как intent: `ctx.chatbase.setIntent('greeting')`
+
+### Непонятые сообщения
+Нужно отмечать их через `ctx.chatbase.setHandled(false)`
+
+### Отзывы
+Отзывы можно помечать через `ctx.chatbase.setAsFeedback()`
+
+### Версия навыка
+Версию можно передавать через `ctx.chatbase.setVersion('1.2.3')`
