@@ -1,3 +1,12 @@
+# [1.1.0](https://github.com/popstas/yandex-dialogs-sdk-chatbase/compare/v1.0.1...v1.1.0) (2019-01-09)
+
+
+### Features
+
+* setIntent, setAsNotHandled, setAsFeedback, setVersion ([62623ee](https://github.com/popstas/yandex-dialogs-sdk-chatbase/commit/62623ee))
+
+
+
 ## [1.0.1](https://github.com/popstas/yandex-dialogs-sdk-chatbase/compare/v1.0.0...v1.0.1) (2019-01-08)
 
 
