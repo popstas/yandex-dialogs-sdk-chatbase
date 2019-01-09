@@ -1,3 +1,12 @@
+## [1.2.1](https://github.com/popstas/yandex-dialogs-sdk-chatbase/compare/v1.2.0...v1.2.1) (2019-01-09)
+
+
+### Bug Fixes
+
+* сообщения агента размечались как пользовательские ([d77ab53](https://github.com/popstas/yandex-dialogs-sdk-chatbase/commit/d77ab53))
+
+
+
 # [1.2.0](https://github.com/popstas/yandex-dialogs-sdk-chatbase/compare/v1.1.2...v1.2.0) (2019-01-09)
 
 
