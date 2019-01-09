@@ -60,7 +60,7 @@ module.exports = api_key => (ctx, next) => {
 
   // функцию нужно вызвать в самом конце, перед отправкой ответа пользователю
   ctx.chatbase.sendEvent = async text => {
-    if (ctx.message == 'ping' || !api_key) return;
+    if (ctx.message == 'ping' || ctx.message == '' || !api_key) return;
 
     // запрос
     sendMessage(ctx.message, true, msgParams);
