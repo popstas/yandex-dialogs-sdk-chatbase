@@ -14,8 +14,7 @@ module.exports = (api_key, version = '') => (ctx, next) => {
       .setPlatform(ctx.data.meta.client_id)
       .setTimestamp(Date.now().toString())
       .setUserId(ctx.userId)
-      .setCustomSessionId(ctx.sessionId)
-      .setMessageId(ctx.messageId);
+      .setCustomSessionId(ctx.sessionId);
 
     if (isUser) {
       msg.setAsTypeUser();
